@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+var api = require('../../utils/api.js')
 
 function SelectedGenre (props) {
   var languages = ['All', 'Disco', 'House', 'Techno', 'Pop'];
@@ -22,23 +23,31 @@ function SelectedGenre (props) {
 SelectedGenre.propTypes = {
   selectedGenre: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired,
-};
+}
 
 export default class Nav extends React.Component {
   constructor(props) {
-    super();
+    super()
     this.state = {
-      selectedGenre: 'All',
-    };
+      selectedGenre: 'null',
+    }
 
     this.updateLanguage = this.updateLanguage.bind(this);
   }
+
+  componentDidMount () {
+    api.fetchPopularGenres(this.state.selectedGenre)
+    .then(function (genres) {
+      console.log(genres)
+    })
+  }
+
   updateLanguage(lang) {
     this.setState(function () {
       return {
         selectedGenre: lang,
       }
-    });
+    })
   }
   render() {
     return (
