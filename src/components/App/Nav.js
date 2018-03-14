@@ -38,7 +38,7 @@ export default class Nav extends React.Component {
   componentDidMount () {
     api.fetchPopularGenres(this.state.selectedGenre)
     .then((genres) => {
-      console.table(genres)
+      console.log(genres)
     })
   }
 
