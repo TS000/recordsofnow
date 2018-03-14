@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-var api = require('../../utils/api.js')
+var api = require('../../utils/api2.js')
 
 function SelectedGenre (props) {
   var languages = ['All', 'Disco', 'House', 'Techno', 'Pop'];
@@ -37,8 +37,8 @@ export default class Nav extends React.Component {
 
   componentDidMount () {
     api.fetchPopularGenres(this.state.selectedGenre)
-    .then(function (genres) {
-      console.log(genres)
+    .then((genres) => {
+      console.table(genres)
     })
   }
 
