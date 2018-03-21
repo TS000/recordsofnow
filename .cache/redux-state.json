@@ -5,23 +5,23 @@
       "jsonName": "dev-404-page.json",
       "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/home/pretzel/code/recordsofnow/.cache/dev-404-page.js",
+      "component": "/home/records/code/recordsofnow/.cache/dev-404-page.js",
       "componentChunkName": "component---cache-dev-404-page-js",
       "context": {},
       "pluginCreator___NODE": "Plugin dev-404-page",
       "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/home/pretzel/code/recordsofnow/.cache/dev-404-page.js",
+      "componentPath": "/home/records/code/recordsofnow/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ffb47d11ab63cee6b34d465ba1219615",
+        "contentDigest": "525ff899514dee4e3b54bd99c550ce6e",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin dev-404-page": {
-      "resolve": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "resolve": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/dev-404-page",
       "id": "Plugin dev-404-page",
       "name": "dev-404-page",
       "version": "1.0.0",
@@ -33,7 +33,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "pluginFilepath": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/dev-404-page",
       "packageJson": {
         "name": "dev-404-page",
         "description": "Internal plugin to add a 404 page in development with helpful information",
@@ -50,13 +50,13 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d7dcf261c5ed2f95c9809e9b5d7a7b98",
+        "contentDigest": "f8dc32e29f3196ae1da3b8860e8a2f25",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin component-page-creator": {
-      "resolve": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "resolve": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-page-creator",
       "id": "Plugin component-page-creator",
       "name": "component-page-creator",
       "version": "1.0.0",
@@ -68,7 +68,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "pluginFilepath": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-page-creator",
       "packageJson": {
         "name": "component-page-creator",
         "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
@@ -89,13 +89,13 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3a30a2c14edcbe47127d74595f15980e",
+        "contentDigest": "cf8dad609cf011e0024d0310f67cf891",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin component-layout-creator": {
-      "resolve": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "resolve": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
       "id": "Plugin component-layout-creator",
       "name": "component-layout-creator",
       "version": "1.0.0",
@@ -107,7 +107,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "pluginFilepath": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
       "packageJson": {
         "name": "component-layout-creator",
         "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
@@ -128,13 +128,13 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f80162381d6d4f222891578315a51bfc",
+        "contentDigest": "a900f5c089de6606e6417a6c513277b8",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin internal-data-bridge": {
-      "resolve": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "resolve": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
       "id": "Plugin internal-data-bridge",
       "name": "internal-data-bridge",
       "version": "1.0.0",
@@ -147,7 +147,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "pluginFilepath": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
       "packageJson": {
         "name": "internal-data-bridge",
         "description": "An internal Gatsby plugin which creates data nodes from internal data",
@@ -164,13 +164,13 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f5f99b5dc7206733f436c315649f39cb",
+        "contentDigest": "f2f3a5384a3d11ef6795dff3ccd7ab27",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin prod-404": {
-      "resolve": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "resolve": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/prod-404",
       "id": "Plugin prod-404",
       "name": "prod-404",
       "version": "1.0.0",
@@ -182,7 +182,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "pluginFilepath": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/prod-404",
       "packageJson": {
         "name": "prod-404",
         "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
@@ -199,13 +199,13 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "832fd5c3270e7c0b80749683f2c4106d",
+        "contentDigest": "cbd910c7f63c664f6b7caa569f1007d2",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin query-runner": {
-      "resolve": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "resolve": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/query-runner",
       "id": "Plugin query-runner",
       "name": "query-runner",
       "version": "1.0.0",
@@ -218,7 +218,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "pluginFilepath": "/home/records/code/recordsofnow/node_modules/gatsby/dist/internal-plugins/query-runner",
       "packageJson": {
         "name": "query-runner",
         "description": "Internal plugin for running queries",
@@ -235,16 +235,16 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "82c26318a5c17f31356c37b9bbf651eb",
+        "contentDigest": "964828897e9e95afae634389d32d30e4",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin gatsby-plugin-react-helmet": {
-      "resolve": "/home/pretzel/code/recordsofnow/node_modules/gatsby-plugin-react-helmet",
+      "resolve": "/home/records/code/recordsofnow/node_modules/gatsby-plugin-react-helmet",
       "id": "Plugin gatsby-plugin-react-helmet",
       "name": "gatsby-plugin-react-helmet",
-      "version": "2.0.7",
+      "version": "2.0.6",
       "pluginOptions": {
         "plugins": []
       },
@@ -253,15 +253,14 @@
       "ssrAPIs": [
         "onRenderBody"
       ],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow/node_modules/gatsby-plugin-react-helmet",
+      "pluginFilepath": "/home/records/code/recordsofnow/node_modules/gatsby-plugin-react-helmet",
       "packageJson": {
         "name": "gatsby-plugin-react-helmet",
         "description": "Stub description for gatsby-plugin-react-helmet",
-        "version": "2.0.7",
+        "version": "2.0.6",
         "main": "index.js",
         "keywords": [
-          "gatsby",
-          "gatsby-plugin"
+          "gatsby"
         ],
         "author": {
           "name": "Kyle Mathews",
@@ -300,13 +299,13 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "6e3b9012eaf0e8071a58b2cf0b899f65",
+        "contentDigest": "38a5449ef7ec2d0e36136351175e0c3c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Plugin default-site-plugin": {
-      "resolve": "/home/pretzel/code/recordsofnow",
+      "resolve": "/home/records/code/recordsofnow",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
       "version": "72c0d37b2bb406acb273b4e25d7d77c3",
@@ -316,7 +315,7 @@
       "nodeAPIs": [],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/pretzel/code/recordsofnow",
+      "pluginFilepath": "/home/records/code/recordsofnow",
       "packageJson": {
         "name": "gatsby-starter-default",
         "description": "Gatsby default starter",
@@ -330,6 +329,10 @@
           {
             "name": "axios",
             "version": "^0.18.0"
+          },
+          {
+            "name": "disconnect",
+            "version": "^1.2.1"
           },
           {
             "name": "gatsby",
@@ -361,7 +364,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "6563a94645eddb7e1b20d92c260585f4",
+        "contentDigest": "f35adb33f74fcd66aac6095b5a1efcaa",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -374,12 +377,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-03-14T19:17:26.473Z",
+      "buildTime": "2018-03-21T17:40:30.730Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "01a7bfd45512537e0e63e6ac4010eb50",
+        "contentDigest": "4170c6033fc90a11202a4290e025592a",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -389,18 +392,18 @@
       "jsonName": "404.json",
       "internalComponentName": "Component404",
       "path": "/404/",
-      "component": "/home/pretzel/code/recordsofnow/src/pages/404.js",
+      "component": "/home/records/code/recordsofnow/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/pretzel/code/recordsofnow/src/pages/404.js",
+      "componentPath": "/home/records/code/recordsofnow/src/pages/404.js",
       "id": "SitePage /404/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5d863642bba20991aa088fc886e69d19",
+        "contentDigest": "ad8818beca74b030d37d7193f6a04eb2",
         "owner": "internal-data-bridge"
       }
     },
@@ -409,18 +412,18 @@
       "jsonName": "index.json",
       "internalComponentName": "ComponentIndex",
       "path": "/",
-      "component": "/home/pretzel/code/recordsofnow/src/pages/index.js",
+      "component": "/home/records/code/recordsofnow/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/pretzel/code/recordsofnow/src/pages/index.js",
+      "componentPath": "/home/records/code/recordsofnow/src/pages/index.js",
       "id": "SitePage /",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d586cfaaac25f2578ba1bd35d41ccf2b",
+        "contentDigest": "f97ea589ae430c73ed19cf5e836cfc1d",
         "owner": "internal-data-bridge"
       }
     },
@@ -429,18 +432,18 @@
       "jsonName": "page-2.json",
       "internalComponentName": "ComponentPage2",
       "path": "/page-2/",
-      "component": "/home/pretzel/code/recordsofnow/src/pages/page-2.js",
+      "component": "/home/records/code/recordsofnow/src/pages/page-2.js",
       "componentChunkName": "component---src-pages-page-2-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/pretzel/code/recordsofnow/src/pages/page-2.js",
+      "componentPath": "/home/records/code/recordsofnow/src/pages/page-2.js",
       "id": "SitePage /page-2/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a4d3836ba258de441c5cc65211b90646",
+        "contentDigest": "1843dea8e54f620d96898d72a9117a97",
         "owner": "internal-data-bridge"
       }
     },
@@ -449,25 +452,25 @@
       "jsonName": "404-html.json",
       "internalComponentName": "Component404Html",
       "path": "/404.html",
-      "component": "/home/pretzel/code/recordsofnow/src/pages/404.js",
+      "component": "/home/records/code/recordsofnow/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
       "pluginCreator___NODE": "Plugin prod-404",
       "pluginCreatorId": "Plugin prod-404",
-      "componentPath": "/home/pretzel/code/recordsofnow/src/pages/404.js",
+      "componentPath": "/home/records/code/recordsofnow/src/pages/404.js",
       "id": "SitePage /404.html",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "859eb4ba611146d115a2a6919439debe",
+        "contentDigest": "3dd0627be61d597d1a39c598f0722382",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "69eb7fa2164188596b3286b1f3f4509f"
+    "PLUGINS_HASH": "b0092cd249a2863574c0f739ede55ef0"
   },
   "componentDataDependencies": {
     "nodes": {},

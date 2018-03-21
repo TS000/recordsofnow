@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-var api = require('../../utils/api2.js')
+var api = require('../../utils/api.js')
 
 function SelectedGenre (props) {
   var languages = ['All', 'Disco', 'House', 'Techno', 'Pop'];
@@ -29,7 +29,7 @@ export default class Nav extends React.Component {
   constructor(props) {
     super()
     this.state = {
-      selectedGenre: 'null',
+      selectedGenre: '',
     }
 
     this.updateLanguage = this.updateLanguage.bind(this);
