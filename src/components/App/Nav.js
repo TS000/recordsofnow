@@ -3,16 +3,16 @@ import PropTypes from 'prop-types'
 var api = require('../../utils/api.js')
 
 function SelectedGenre (props) {
-  var genres = ['All', 'Disco', 'House', 'Techno', 'Pop'];
+  var genre = ['All', 'Disco', 'House', 'Techno', 'Pop'];
   return (
     <ul className='genres'>
-      {genres.map(function (lang) {
+      {genre.map(function (genre) {
         return (
           <li
-            style={lang === props.selectedGenre ? {color: '#d0021b'} : null}
-            onClick={props.onSelect.bind(null, lang)}
-            key={lang}>
-              {lang}
+            style={genre === props.selectedGenre ? {color: '#d0021b'} : null}
+            onClick={props.onSelect.bind(null, genre)}
+            key={genre}>
+              {genre}
           </li>
         )
       })}
@@ -22,8 +22,16 @@ function SelectedGenre (props) {
 
 function GenreGrid (props) {
   return (
-    <ul className="popular-crate">
-
+    <ul className='popular-crate'>
+      {props.genre.map(function (genre, index) {
+        <li key={genre.name} className='popular-record'>
+          <div className='sleeve-cover'>Record</div>
+          <ul className='space-list-items'>
+          <li>
+            <img src="{data.results.cover_image}" alt=""/>
+          </li></ul>
+        </li>
+      })}
     </ul>
     )
 }
@@ -40,25 +48,25 @@ export default class Nav extends React.Component {
       selectedGenre: 'All',
     }
 
-    this.updateGenres = this.updateGenres.bind(this);
+    this.updategenre = this.updategenre.bind(this);
   }
 
   componentDidMount () {
-   this.updateGenres(this.state.selectedGenre)
+   this.updategenre(this.state.selectedGenre)
   }
 
-  updateGenres(lang) {
+  updategenre(genre) {
     this.setState(function () {
       return {
-        selectedGenre: lang,
-        genres: null
+        selectedGenre: genre,
+        genre: null
       }
     })
      api.fetchPopularGenres(this.state.selectedGenre)
-    .then(function (genres) {
+    .then(function (genre) {
       this.setState(function () {
         return {
-          genres: genres
+          genre: genre
         }
       })
     }.bind(this))
@@ -68,8 +76,10 @@ export default class Nav extends React.Component {
       <div>
         <SelectedGenre
           selectedGenre={this.state.selectedGenre}
-          onSelect={this.updateGenres} />
-          <GenreGrid genres={this.state.genres} />
+          onSelect={this.updategenre} />
+          {!this.state.genre
+            ? <p>LOADING...</p>
+            : <GenreGrid genre={this.state.genre} />}
       </div>
     )
   }

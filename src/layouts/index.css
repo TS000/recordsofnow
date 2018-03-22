@@ -26,7 +26,7 @@ li {
   cursor: pointer;
 }
 
-.popluar-crate {
+.popular-crate {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
