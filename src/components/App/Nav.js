@@ -3,16 +3,16 @@ import PropTypes from 'prop-types'
 var api = require('../../utils/api.js')
 
 function SelectedGenre (props) {
-  var genre = ['All', 'Disco', 'House', 'Techno', 'Pop'];
+  var genres = ['All', 'Disco', 'House', 'Techno', 'Pop'];
   return (
     <ul className='genres'>
-      {genre.map(function (genre) {
+      {genres.map(function (genres) {
         return (
           <li
-            style={genre === props.selectedGenre ? {color: '#d0021b'} : null}
-            onClick={props.onSelect.bind(null, genre)}
-            key={genre}>
-              {genre}
+            style={genres === props.selectedGenre ? {color: '#d0021b'} : null}
+            onClick={props.onSelect.bind(null, genres)}
+            key={genres}>
+              {genres}
           </li>
         )
       })}
@@ -23,8 +23,8 @@ function SelectedGenre (props) {
 function GenreGrid (props) {
   return (
     <ul className='popular-crate'>
-      {props.genre.map(function (genre, index) {
-        <li key={genre.name} className='popular-record'>
+      {props.genres.map(function (genres, index) {
+        <li key={genres.name} className='popular-record'>
           <div className='sleeve-cover'>Record</div>
           <ul className='space-list-items'>
           <li>
@@ -55,18 +55,18 @@ export default class Nav extends React.Component {
    this.updategenre(this.state.selectedGenre)
   }
 
-  updategenre(genre) {
+  updategenre(genres) {
     this.setState(function () {
       return {
-        selectedGenre: genre,
-        genre: null
+        selectedGenre: genres,
+        genres: null
       }
     })
      api.fetchPopularGenres(this.state.selectedGenre)
-    .then(function (genre) {
+    .then(function (genres) {
       this.setState(function () {
         return {
-          genre: genre
+          genres: genres
         }
       })
     }.bind(this))
@@ -77,9 +77,9 @@ export default class Nav extends React.Component {
         <SelectedGenre
           selectedGenre={this.state.selectedGenre}
           onSelect={this.updategenre} />
-          {!this.state.genre
+          {!this.state.genres
             ? <p>LOADING...</p>
-            : <GenreGrid genre={this.state.genre} />}
+            : <GenreGrid genres={this.state.genres} />}
       </div>
     )
   }
