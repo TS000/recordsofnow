@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 var api = require('../../utils/api.js')
 
 function SelectedGenre (props) {
-  var languages = ['All', 'Disco', 'House', 'Techno', 'Pop'];
+  var genres = ['All', 'Disco', 'House', 'Techno', 'Pop'];
   return (
-    <ul className='languages'>
-      {languages.map(function (lang) {
+    <ul className='genres'>
+      {genres.map(function (lang) {
         return (
           <li
             style={lang === props.selectedGenre ? {color: '#d0021b'} : null}
@@ -20,6 +20,14 @@ function SelectedGenre (props) {
   )
 }
 
+function GenreGrid (props) {
+  return (
+    <ul className="popular-crate">
+
+    </ul>
+    )
+}
+
 SelectedGenre.propTypes = {
   selectedGenre: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired,
@@ -29,32 +37,39 @@ export default class Nav extends React.Component {
   constructor(props) {
     super()
     this.state = {
-      selectedGenre: '',
+      selectedGenre: 'All',
     }
 
-    this.updateLanguage = this.updateLanguage.bind(this);
+    this.updateGenres = this.updateGenres.bind(this);
   }
 
   componentDidMount () {
-    api.fetchPopularGenres(this.state.selectedGenre)
-    .then((genres) => {
-      console.log(genres)
-    })
+   this.updateGenres(this.state.selectedGenre)
   }
 
-  updateLanguage(lang) {
+  updateGenres(lang) {
     this.setState(function () {
       return {
         selectedGenre: lang,
+        genres: null
       }
     })
+     api.fetchPopularGenres(this.state.selectedGenre)
+    .then(function (genres) {
+      this.setState(function () {
+        return {
+          genres: genres
+        }
+      })
+    }.bind(this))
   }
   render() {
     return (
       <div>
         <SelectedGenre
           selectedGenre={this.state.selectedGenre}
-          onSelect={this.updateLanguage} />
+          onSelect={this.updateGenres} />
+          <GenreGrid genres={this.state.genres} />
       </div>
     )
   }
