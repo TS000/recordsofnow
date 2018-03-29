@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 var api = require('../../utils/api.js')
 
 function SelectedGenre (props) {
-  var genres = ['All', 'Disco', 'House', 'Techno', 'Pop'];
+  var genres = ['All', 'Disco', 'House', 'Techno', 'Pop']
   return (
     <ul className='genres'>
       {genres.map(function (genres) {
@@ -24,13 +24,17 @@ function GenreGrid (props) {
   return (
     <ul className='popular-crate'>
       {props.genres.map(function (genres, index) {
-        <li key={genres.name} className='popular-record'>
-          <div className='sleeve-cover'>Record</div>
+        return (
+        <li key={genres.id} className='popular-record'>
+          <div className='sleeve-cover'>{genres.id}</div>
           <ul className='space-list-items'>
           <li>
-            <img src="{data.results.cover_image}" alt=""/>
-          </li></ul>
+          <p>{genres.type}</p>
+            <img src={genres.cover_image} alt=""/>
+          </li>
+          </ul>
         </li>
+        )
       })}
     </ul>
     )
@@ -63,10 +67,11 @@ export default class Nav extends React.Component {
       }
     })
      api.fetchPopularGenres(this.state.selectedGenre)
-    .then(function (genres) {
+    .then(function (genre) {
+      console.log(genre)
       this.setState(function () {
         return {
-          genres: genres
+          genres: genre
         }
       })
     }.bind(this))
@@ -80,6 +85,8 @@ export default class Nav extends React.Component {
           {!this.state.genres
             ? <p>LOADING...</p>
             : <GenreGrid genres={this.state.genres} />}
+              
+
       </div>
     )
   }
