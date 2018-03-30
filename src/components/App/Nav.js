@@ -49,7 +49,7 @@ export default class Nav extends React.Component {
   constructor(props) {
     super()
     this.state = {
-      selectedGenre: 'All',
+      selectedGenre: 'All'
     }
 
     this.updategenre = this.updategenre.bind(this);
@@ -66,7 +66,7 @@ export default class Nav extends React.Component {
         genres: null
       }
     })
-     api.fetchPopularGenres(this.state.selectedGenre)
+     api.fetchPopularGenres(genres)
     .then(function (genre) {
       console.log(genre)
       this.setState(function () {
