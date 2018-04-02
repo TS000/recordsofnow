@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-var api = require('../../utils/api.js')
+import API from '../../utils/api.js'
+import Masonry from 'react-masonry-component'
 
 function SelectedGenre (props) {
   var genres = ['All', 'Disco', 'House', 'Techno', 'Pop']
@@ -22,21 +23,22 @@ function SelectedGenre (props) {
 
 function GenreGrid (props) {
   return (
-    <ul className='popular-crate'>
-      {props.genres.map(function (genres, index) {
+    <div>
+          <Masonry 
+      className={'my-gallery-class'}>
+       {props.genres.map(function (genres, index) {
         return (
-        <li key={genres.id} className='popular-record'>
-          <div className='sleeve-cover'>{genres.id}</div>
-          <ul className='space-list-items'>
-          <li>
-          <p>{genres.type}</p>
+         
+        <div className="record-wrap">
+          <div className="textWrap"><h1>{genres.title}</h1></div>
             <img src={genres.cover_image} alt=""/>
-          </li>
-          </ul>
-        </li>
+            </div>
+
+        
         )
       })}
-    </ul>
+   </Masonry>
+   </div>
     )
 }
 
@@ -66,7 +68,7 @@ export default class Nav extends React.Component {
         genres: null
       }
     })
-     api.fetchPopularGenres(genres)
+     API.fetchPopularGenres(genres)
     .then(function (genre) {
       console.log(genre)
       this.setState(function () {
