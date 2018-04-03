@@ -62,7 +62,7 @@ export default class Nav extends React.Component {
   }
 
   updategenre(genres) {
-    this.setState(function () {
+    this.setState( () => {
       return {
         selectedGenre: genres,
         genres: null
